@@ -5,8 +5,8 @@ from unittest.mock import patch
 import pandas as pd
 import pytest
 
-from data_handling.utils import data_io
-from data_handling.utils.data_io import _IOFactory
+from data_handling import data_io
+from data_handling.data_io import _IOFactory
 
 
 @pytest.fixture

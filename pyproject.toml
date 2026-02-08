@@ -1,6 +1,6 @@
 [project]
 name = "data_handling"
-version = "0.0.1"
+version = "1.0.0"
 description = "Implement SOLID data input and output methods that look simple from the output. Make them easy to swap as new input and output types are needed by extending the functionality, without modification."
 authors = [
   { name = "Anders Henriksen", email = "your@email.com" },
@@ -13,21 +13,15 @@ classifiers = [
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "pandas>=3.0.0",
+]
+[dependency-groups]
+dev = [
     "coverage",
-    "mkdocs-include-markdown-plugin",
-    "mkdocstrings[python]",
-    "invoke",
-    "mkdocs",
-    "mkdocs-material",
-    "mkdocstrings",
-    "mkdocstrings-python",
-    "pre-commit",
     "pytest",
     "ruff",
     "setuptools",
     "wheel",
-    "toc",
-    "pandas>=3.0.0",
 ]
 
 [build-system]

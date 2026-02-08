@@ -1,4 +1,1 @@
-"""Welcome to the data_handling package."""
-
-# Insert everything you want to expose as a package and add to the documentation
-__all__ = []
+"""Provide utilities, currently only logging utilities, for the project."""

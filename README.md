@@ -8,15 +8,17 @@ If you use a config setup to provide the paths, then only the format_type argume
 ## Installation
 Getting started running code in this project is easy.
 
-1. First, clone the repository:
+1. **Clone the repository:**
     ```bash
     git clone https://github.com/AndersHenriksen-dev/data_handling
     cd data_handling
     ```
 
 
-2. This project uses `uv` as dependency manager, make sure you have `uv` installed. You can find installation instructions [here](https://uv.dev/).
-3. You might have to run the following to make sure uv is installed in path:
+2. **Install uv:**
+   This project uses `uv` as dependency manager, make sure you have `uv` installed. You can find installation instructions [here](https://uv.dev/).
+3. **Install uv in path:**
+   You might have to run the following to make sure uv is installed in path:
     ```bash
     uv tool install uv
     uv tool update-shell
@@ -27,9 +29,15 @@ Getting started running code in this project is easy.
     uv tool update-shell
     ```
 
-4. Then, install the dependencies:
+4. **install the dependencies:**
+   If you intend to develop and wish to run tests:
     ```bash
     uv sync
+    ```
+
+    If you just want to use the code and don't care about tests:
+     ```bash
+    uv sync --no-dev
     ```
 
 Alternately, just copy the data_io.py and test_data_io.py files into your project and ``uv add`` the dependencies to your project.
